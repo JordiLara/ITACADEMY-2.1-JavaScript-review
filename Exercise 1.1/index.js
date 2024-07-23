@@ -9,3 +9,8 @@ let add = (a, b) => a + b;
 
 console.log(add(a, b));
 
+// 1.2 - 2nd. Funció fletxa que retorni numero aleatori
+
+let randomNumber = () => Math.floor(Math.random() * 100);
+
+console.log(randomNumber());
