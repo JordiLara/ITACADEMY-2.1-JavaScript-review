@@ -10,13 +10,13 @@ let b = 3;
 }
 */
 
-let add = (a, b) => a + b; 
+const add = (a, b) => a + b; 
 
 console.log(add(a, b));
 
 /* 1.2 - Funció de fletxa sense paràmetres: Crea una funció de fletxa anomenada randomNumber que no necessiti paràmetres i que retorni un número aleatori entre 0 i 100.*/
 
-let randomNumber = () => Math.floor(Math.random() * 100); // genera un número aleatori entre 0 i 100.
+const randomNumber = () => Math.floor(Math.random() * 100); // genera un número aleatori entre 0 i 100.
 
 console.log(randomNumber());
 
@@ -50,3 +50,13 @@ const printNumbers = (numbers) => {
 
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 printNumbers(numeros);
+
+// 3 Estrellas
+
+/*Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.*/
+
+const printAfterThree = () => {
+    setTimeout(() => console.log('You have been waiting for three seconds.'), 3000);
+};
+
+printAfterThree();
