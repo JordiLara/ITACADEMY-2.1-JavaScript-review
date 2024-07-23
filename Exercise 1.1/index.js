@@ -31,10 +31,22 @@ class Person { // Crea classe Person
     greet = () => { // Funció fletxa anomenada greet
         console.log(`Hola, `+ this.name);
     }
-}
+};
 
 const personOne = new Person(`Pepito`);
 personOne.greet(); /* Crida a la funció greet i imprimeix la salutació de la propietat name a la nova persona, que inclou el seu nom.*/
 
+// 2 Estrellas
 
+/* 1.4 - Funció de fletxa dins d'un loop: Crea una funció anomenada printNumbers que accepti un array de números i utilitzi un loop for per imprimir cada número a la consola utilitzant una funció de fletxa.*/
 
+const printNumbers = (numbers) => {
+    for (let i = 0; i < numeros.length; i++) {
+        ((num) => {
+            console.log(num);
+        })(numbers[i]);
+    }
+};
+
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+printNumbers(numeros);
