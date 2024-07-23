@@ -5,7 +5,12 @@
 let a = 7;
 let b = 3;
 
-let add = (a, b) => a + b;
+/*function add (a, b) { 
+    return a + b;
+}
+*/
+
+let add = (a, b) => a + b; 
 
 console.log(add(a, b));
 
@@ -30,4 +35,6 @@ class Person { // Crea classe Person
 
 const personOne = new Person(`Pepito`);
 personOne.greet(); /* Crida a la funció greet i imprimeix la salutació de la propietat name a la nova persona, que inclou el seu nom.*/
+
+
 
