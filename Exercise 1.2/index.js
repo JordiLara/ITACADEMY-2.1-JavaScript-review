@@ -14,7 +14,21 @@ let num1 = 18;
 let num2 = 22;
 
 const comparar = num1 > num2 ? 'num1 és més gran' : 'num2 és més gran';
-
 console.log(comparar);
 
+// 2 Estrellas
 
+/* 1.3 - Ús enllaçat d'operadors ternaris: Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar si un número és positiu, negatiu o zero.
+
+Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres paràmetres (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim. */
+
+let num = -23;
+
+const checkNum = num > 0 ? 'positiu' : num < 0 ? 'negatiu' : 'zero';
+console.log(checkNum)
+
+const trobarMaxim = (a, b, c) => {
+    const maxim = a > b ? (a > c ? a : c) : (b > c ? b : c);
+    return maxim;
+};
+console.log(trobarMaxim(11, 22, 33));
