@@ -32,3 +32,18 @@ const trobarMaxim = (a, b, c) => {
     return maxim;
 };
 console.log(trobarMaxim(11, 22, 33));
+
+// 3 Estrellas
+
+/* 1.4 - Operador ternari dins un bucle: Escriu una funció parOImpar que accepti un array de números i utilitzi un bucle per a recórrer l'array. Dins del bucle, utilitza l'operador ternari per a determinar si cada número és parell o imparell. */
+
+const parOImpar = (numeros) => {
+    
+    for (let i = 0; i < numeros.length; i++) {
+        const averiguaNumeros = numeros[i] % 2 === 0 ? 'par' : 'impar';
+        console.log(averiguaNumeros);
+    }
+};
+
+const numeros = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+parOImpar(numeros);
