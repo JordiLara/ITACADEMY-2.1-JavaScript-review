@@ -30,8 +30,8 @@ function esperarISaludar(nom, callback) {
     }, 2000); 
   }
   
-  // Exemple:
+// Exemple:
  
-  esperarISaludar('Pepito', function(nomSaludo){
-    console.log('Hola ' + nomSaludo)
-  });
+esperarISaludar('Pepito', function(nomSaludo){
+console.log('Hola ' + nomSaludo)
+});
