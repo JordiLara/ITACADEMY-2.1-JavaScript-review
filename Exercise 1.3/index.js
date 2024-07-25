@@ -52,3 +52,20 @@ function myArray(element) {
 
 const array = ['pato', 'perro', 'mono', 'gato', 'pez'];
 processarElements(array, myArray);
+
+// 3 Estrellas
+
+/* 1.5 - Escriu una funció processarCadena que accepti dos paràmetres: una cadena de caràcters i una funció de callback. La funció processarCadena ha de convertir la cadena a majúscules i llavors invocar la funció de callback amb la cadena transformada. */
+
+function processarCadena(string, callback) {
+    let stringToMayus = string.toUpperCase();
+    callback(stringToMayus);
+}
+
+function Mayus(stringToMayus) {
+    console.log(stringToMayus);
+}
+
+const string = "HoLa DoN PepiTo";
+
+processarCadena(string, Mayus);
