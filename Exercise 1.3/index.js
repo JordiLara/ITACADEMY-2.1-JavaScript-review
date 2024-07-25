@@ -35,3 +35,18 @@ function esperarISaludar(nom, callback) {
 esperarISaludar('Pepito', function(nomSaludo){
 console.log('Hola ' + nomSaludo)
 });
+
+/* 1.4 - Callbacks amb arrays: Escriu una funció processarElements que accepti dos paràmetres: un array i una funció de callback. La funció processarElements ha d'invocar la funció de callback per cada element de l'array. */
+
+function processarElements(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i]);
+    }
+}
+
+function myArray(element) {
+    console.log('Processing element: ' + element);
+}
+
+const array = ['pato', 'perro', 'mono', 'gato', 'pez'];
+processarElements(array, myArray);
