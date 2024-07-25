@@ -4,7 +4,7 @@
 
 function potConduir(edat) {
     return edat >= 18 ? 'Pots conduir' : 'No pots conduir'
-};
+}
 
 console.log(potConduir(43));
 
@@ -25,7 +25,7 @@ Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres par
 let num = -23;
 
 const checkNum = num > 0 ? 'positiu' : num < 0 ? 'negatiu' : 'zero';
-console.log(checkNum)
+console.log(checkNum);
 
 const trobarMaxim = (a, b, c) => {
     const maxim = a > b ? (a > c ? a : c) : (b > c ? b : c);
