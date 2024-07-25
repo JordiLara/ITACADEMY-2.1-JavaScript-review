@@ -21,3 +21,17 @@ function callbackTwo (num1, num2) {
     console.log(`La suma de ${num1} i ${num2} es `, num1 + num2);
 }
 calculadora(2, 3, callbackTwo);
+
+/* 1.3 - Ús de callbacks en funcions asíncrones: Escriu una funció esperarISaludar que accepti dos paràmetres: un nom i una funció de callback. La funció ha d'esperar 2 segons i llavors invocar la funció de callback, passant el nom com a paràmetre.*/
+
+function esperarISaludar(nom, callback) {
+    setTimeout(function(){
+      callback(nom);
+    }, 2000); 
+  }
+  
+  // Exemple:
+ 
+  esperarISaludar('Pepito', function(nomSaludo){
+    console.log('Hola ' + nomSaludo)
+  });
