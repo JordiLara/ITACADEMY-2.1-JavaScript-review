@@ -32,3 +32,13 @@ function big (value) {
 }
 
 console.log(bigOne);
+
+/* 1.4 - Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a calcular la suma total dels números. */
+
+const nombres = [13, 7, 8, 21];
+
+const suma = nombres.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(suma);
