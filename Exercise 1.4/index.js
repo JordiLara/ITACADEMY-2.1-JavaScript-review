@@ -20,3 +20,12 @@ function suma(...args) {
 suma(1, 3);
 suma(1, 2, 3);
 
+// 2 Estrellas
+
+/* 1.3 - Copiant objectes amb Spread: Crea un objecte 'objecte1'. Després crea un segon objecte, 'objecte2', que sigui una còpia de 'objecte1' utilitzant l'operador spread. Canvia una propietat de 'objecte2' i comprova que 'objecte1' no ha canviat. */
+
+const objecte1 = {a : 1, b : 2, c : 3};
+const objecte2 = {...objecte1, b : 5};
+
+console.log(objecte1);
+console.log(objecte2);
