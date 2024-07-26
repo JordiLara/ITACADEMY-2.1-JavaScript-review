@@ -40,3 +40,14 @@ console.log('variable 1: ' + variable1);
 console.log('variable 2: ' + variable2);
 console.log('variable 3: ' + variable3);
 
+// 3 Estrellas
+
+/* 1.5 - Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta array. */
+
+function myFunction(num1, num2, num3) {
+    return num1 + num2 + num3;
+}
+
+const numeros = [1, 2, 3];
+console.log(myFunction(...numeros));
+
