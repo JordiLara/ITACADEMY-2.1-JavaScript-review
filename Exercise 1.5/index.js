@@ -21,3 +21,14 @@ function par (value) {
 }
 
 console.log(parells);
+
+/* 1.3 - Find: Teniu una array de números [1, 10 , 8, 11]. Utilitza la funció find per a trobar el primer número que és major a 10. */
+
+const numbers = [1, 10, 8, 11];
+const bigOne = numbers.find(big);
+
+function big (value) {
+    return value > 10;
+}
+
+console.log(bigOne);
