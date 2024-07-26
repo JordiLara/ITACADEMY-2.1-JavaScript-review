@@ -42,3 +42,21 @@ const suma = nombres.reduce((accumulator, currentValue) => {
 }, 0);
 
 console.log(suma);
+
+// 2 Estrelles 
+
+/* 1.5 - Donat un array "[ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ]", crea una funció en una sola línia que faci el següent:
+
+- Filtra els nombres majors o iguals a 10.
+
+- Multiplica cada nombre filtrat per 2.
+
+- Calcula la suma dels nombres filtrats i multiplicats per 2.
+
+- La funció ha de retornar el resultat de la suma. */
+
+const numsArray =  [1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ];
+
+const arrayTransform = numsArray.filter(value => value > 10).map(value => value * 2).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+console.log(arrayTransform);
