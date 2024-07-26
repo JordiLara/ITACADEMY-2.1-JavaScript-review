@@ -29,3 +29,14 @@ const objecte2 = {...objecte1, b : 5};
 
 console.log(objecte1);
 console.log(objecte2);
+
+/* 1.4 - Rest en Destructuring: Crea una array amb diversos elements. Utilitza destructuring i l'operador rest per a assignar els primers dos elements a variables, i després assignar la resta dels elements a una tercera variable. */
+
+const array = [1, 2, 3, 4, 5];
+
+let [variable1, variable2, ...variable3] = array;
+
+console.log('variable 1: ' + variable1);
+console.log('variable 2: ' + variable2);
+console.log('variable 3: ' + variable3);
+
