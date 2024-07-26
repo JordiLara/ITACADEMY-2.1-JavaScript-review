@@ -60,3 +60,16 @@ const numsArray =  [1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ];
 const arrayTransform = numsArray.filter(value => value > 10).map(value => value * 2).reduce((accumulator, currentValue) => accumulator + currentValue);
 
 console.log(arrayTransform);
+
+// 3 Estrelles 
+
+/* 1.6 - Every / Some: Usa every i some per a determinar si tots o alguns dels elements de l'array [11, 12, 13, 14] són majors que 10, respectivament */
+
+const bigThanTenArray = [11, 12, 13, 14];
+
+function isMoreThan10(value) {
+    return value > 10;
+}
+
+console.log(bigThanTenArray.every(isMoreThan10));
+console.log(bigThanTenArray.some(isMoreThan10));
