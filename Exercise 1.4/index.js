@@ -51,3 +51,11 @@ function myFunction(num1, num2, num3) {
 const numeros = [1, 2, 3];
 console.log(myFunction(...numeros));
 
+/* 1.6 - Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou. */
+
+const object1 = {a : 1, b : 2, c : 3};
+const object2 = {d : 4, e : 5, f : 6};
+
+let newObject = {...object1, ...object2};
+
+console.log(newObject);
