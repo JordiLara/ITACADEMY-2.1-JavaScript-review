@@ -12,12 +12,11 @@ console.log(array3);
 /* 1.2 - Operador Rest en Funcions: Crea una funció 'suma' que utilitzi l'operador rest per a acceptar un nombre indeterminat d'arguments i retornar la seva suma. */
 
 function suma(...args) { 
-    console.log(args.reduce(function(acc, currValue) {
-        return acc + currValue;
+    console.log(args.reduce(function(accumulated, currentValue) {
+        return accumulated + currentValue;
     }, 0));
 }
 
 suma(1, 3);
 suma(1, 2, 3);
-
 
