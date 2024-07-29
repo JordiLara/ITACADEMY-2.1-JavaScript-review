@@ -14,5 +14,13 @@ function myFunction(item, index) {
 let noms1 = ['Anna', 'Bernat', 'Clara'];
 
 for (let x of noms1) {
-    console.log(x)
+    console.log(x);
 }
+
+/* 1.3 - filter: Teniu una array de números. Utilitza filter per a crear una nova array que només contingui els números parells. let numeros = [1, 2, 3, 4, 5, 6]; */
+
+let numeros = [1, 2, 3, 4, 5, 6];
+
+const parells = numeros.filter(value => value % 2 === 0);
+
+console.log(parells);
