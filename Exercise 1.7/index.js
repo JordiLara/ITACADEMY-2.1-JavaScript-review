@@ -61,3 +61,31 @@ const delayMessage3 = () => {
 }
 
 funcionAsync();
+
+// 2 Estrelles
+
+/* 1.5 - Gestió d'errors amb async/await: Modifica la funció de l'exercici 4 per a que capturi qualsevol possible error utilitzant un bloc try/catch. */
+
+async function funcionAsync2(randomCondition) {
+
+    try {
+    let message = await delayMessage4(randomCondition);
+        console.log(message);
+    } catch (error) {
+        console.log("se ha producido un error. ", error);
+    }
+}
+
+const delayMessage4 = (randomCondition) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (randomCondition) {
+                reject('Se produjo un error simulado');
+            } else {
+                resolve('Hola, món');
+            }
+        }, 2000);
+    });
+}
+
+funcionAsync2(1 !== 1); // si la condición se cumple o no, pasará correctamente o dará error.
