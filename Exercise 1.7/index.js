@@ -27,3 +27,20 @@ const delayMessage1 = () => {
 delayMessage1()
 .then((message) => console.log(message));
 
+/* 1.3 - Promesa amb reject: Crea una promesa que es resolgui després de 2 segons si l'input és igual a 'Hola', i que la rebutgi si l'input és qualsevol altra cosa. */
+
+const delayMessage2 = (mensaje) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (mensaje == 'Hola') {
+                resolve('La promesa es aceptada. Hola!');
+            } else {
+                reject('La promesa ha sido rechazada.');
+            }
+        }, 2000);
+    });
+}
+
+delayMessage2('Hello') // modificar aquí para que la promesa sea aceptada o rechazada.
+    .then((mensaje) => console.log(mensaje))
+    .catch((error) => console.error(error));
