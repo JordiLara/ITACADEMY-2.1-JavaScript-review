@@ -51,3 +51,13 @@ for (let imprimir of nums) {
     }
 }
 
+// 3 Estrelles
+
+/* 1.6 - for-of amb index: Utilitza un bucle for-of per a imprimir a la consola cada element de l'array i la seva posició (index): let noms = ['Anna', 'Bernat', 'Clara']. */
+
+let names = ['Anna', 'Bernat', 'Clara'];
+
+for (let [index, nom] of names.entries()) {
+   
+    console.log(index, nom);
+}
