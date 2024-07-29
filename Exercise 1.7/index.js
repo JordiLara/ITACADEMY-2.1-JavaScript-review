@@ -12,3 +12,18 @@ const delayMessage = () => {
     
 delayMessage()
 .then((message) => console.log(message));
+
+
+/* 1.2 - Utilització d'una Promesa: Utilitza la promesa creada en l'exercici anterior. Crea un .then que imprimeixi el resultat a la consola. */
+
+const delayMessage1 = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Hola, món');
+        }, 2000);
+    });
+};
+    
+delayMessage1()
+.then((message) => console.log(message));
+
