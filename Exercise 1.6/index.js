@@ -27,7 +27,7 @@ console.log(parells);
 
 // 2 Estrelles
 
-/* 1.4 - for-in: Teniu un objecte amb parells clau-valor: let obj = { nom: Ona, edat: 25, ciutat: 'Barcelona' }; Utilitza un bucle for-in per a imprimir a la consola cada clau i el seu valor corresponent.*/
+/* 1.4 - for-in: Teniu un objecte amb parells clau-valor: let obj = { nom: Ona, edat: 25, ciutat: 'Barcelona' }; Utilitza un bucle for-in per a imprimir a la consola cada clau i el seu valor corresponent. */
 
 let obj = { 
     nom: 'Ona', 
@@ -39,3 +39,15 @@ for (let clau in obj) {
     console.log(clau);
     console.log(obj[clau]);
   }
+
+/* 1.5 - for-of amb break: Teniu una array de números. Utilitza un bucle for-of per a imprimir a la consola els números fins a trobar el número 5, llavors atura el bucle: let numeros = [1, 2, 3, 4, 5, 6]; */
+  
+let nums = [1, 2, 3, 4, 5, 6];
+
+for (let imprimir of nums) {
+    console.log(imprimir);
+    if (imprimir === 5) {
+        break;
+    }
+}
+
