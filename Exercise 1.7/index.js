@@ -89,3 +89,29 @@ const delayMessage4 = (randomCondition) => {
 }
 
 funcionAsync2(1 !== 1); // si la condición se cumple o no, pasará correctamente o dará error.
+
+// 3 Estrelles 
+
+/* 1.6 - Promise.all: Crea dues promeses que es resolguin després de 2 i 3 segons, respectivament. Utilitza Promise.all per a esperar que ambdues promeses es resolguin, i imprimeix els resultats a la consola. */
+
+const SayHiIn2 = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve('Se resuelve en 2 segundos')
+    }, 2000);
+});
+
+
+const SayHiIn3 = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve('Se resuelve en 3 segundos')
+    }, 3000);
+});
+
+
+Promise.all([SayHiIn2, SayHiIn3])
+    .then(results => {
+        console.log(results);
+    })
+    .catch(error => {
+        console.error(error);
+    });
