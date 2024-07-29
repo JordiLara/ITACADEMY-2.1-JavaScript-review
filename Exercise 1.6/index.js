@@ -24,3 +24,18 @@ let numeros = [1, 2, 3, 4, 5, 6];
 const parells = numeros.filter(value => value % 2 === 0);
 
 console.log(parells);
+
+// 2 Estrelles
+
+/* 1.4 - for-in: Teniu un objecte amb parells clau-valor: let obj = { nom: Ona, edat: 25, ciutat: 'Barcelona' }; Utilitza un bucle for-in per a imprimir a la consola cada clau i el seu valor corresponent.*/
+
+let obj = { 
+    nom: 'Ona', 
+    edat: 25, 
+    ciutat: 'Barcelona' 
+};
+
+for (let clau in obj) {
+    console.log(clau);
+    console.log(obj[clau]);
+  }
