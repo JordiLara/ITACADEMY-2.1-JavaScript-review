@@ -49,13 +49,13 @@ delayMessage2('Hello') // modificar aquí para que la promesa sea aceptada o rec
 
 async function funcionAsync() {
     let message = await delayMessage3();
-    console.log(message)
+    console.log(message);
 }
 
 const delayMessage3 = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve('Hola, món')
+            resolve('Hola, món');
         }, 2000);
     });
 }
