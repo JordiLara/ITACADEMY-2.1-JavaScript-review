@@ -5,8 +5,8 @@
 let noms = ['Anna', 'Bernat', 'Clara'];
 noms.forEach(myFunction);
  
-function myFunction(item, index) {
-  console.log ( index + ": " + item); 
+function myFunction(item) {
+  console.log (item); 
 }
 
 /* 1.2 - for-of: Teniu una array de noms. Utilitza un bucle for-of per a imprimir cada nom a la consola: let noms = ['Anna', 'Bernat', 'Clara']; */
