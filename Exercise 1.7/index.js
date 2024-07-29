@@ -44,3 +44,20 @@ const delayMessage2 = (message) => {
 delayMessage2('Hello') // modificar aquí para que la promesa sea aceptada o rechazada.
     .then((message) => console.log(message))
     .catch((error) => console.error(error));
+
+/* 1.4 - Ús de async/await: Escriu una funció asíncrona que utilitzi la funció await per a esperar el resultat de la promesa creada a l'exercici 1, i que després imprimeixi aquest resultat a la consola. */
+
+async function funcionAsync() {
+    let message = await delayMessage3();
+    console.log(message)
+}
+
+const delayMessage3 = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Hola, món')
+        }, 2000);
+    });
+}
+
+funcionAsync();
